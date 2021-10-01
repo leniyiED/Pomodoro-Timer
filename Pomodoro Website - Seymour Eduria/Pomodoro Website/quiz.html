@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Quiz Page</title>
+
+    <!-- Import Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link href="quiz.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+
+    <!-- NavBar with options that are link references that redirects the user towards another page -->  
+    <nav>
+
+      <!-- Unordered list to easier format all the links and references -->
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+      </ul>
+
+      <h1 id="navHeading"> tomatoFocus </h1>
+
+      <img id="logo" src="/img/PomodoroLogo.png">
+    </nav>
+
+    <!-- Assigned the id "box" and the class "center" to put the elements in one container that will be styled using CSS and be centered -->   
+    <div id="box" class="center">
+
+      <h1> Pomodoro Quiz </h1>
+
+      <!-- Each question was given the class "questions" so that not only one element can be styled and be assigned as a variable in CSS/JS -->
+      <!-- Each Input Element has a certain ID and beside each input Element has a span tag beside them in order to display using Javascript if the answer was correct or Wrong -->
+      <div class="questions">
+        <h2>Question 1</h2>
+        <p>Who made the Pomodoro Technique?<p>
+        <p>Answer: <input id="qOne" class="questIn" type="text"><span id="outOne"></span></p>
+      </div>
+    
+      <div class="questions">
+        <h2>Question 2</h2>
+        <p>How long is a Pomodoro Cycle (Pomodoro + Break)?</p>
+        <p>Answer: <input id="qTwo" class="questIn" type="text"><span id="outTwo"></span></p>
+      </div>
+    
+      <div class="questions">
+        <h2>Question 3</h2>
+        <p>Based on research, normally how long is our focus span?</p>
+        <p>Answer: <input id="qThree" class="questIn" type="text"><span id="outThree"></span></p>
+
+      </div>
+    
+      <div class="questions">
+        <h2>Question 4</h2>
+        <p>What is the opposite of Productivity?</p>
+        <p>Answer: <input id="qFour" class="questIn" type="text"><span id="outFour"></span></p>
+      </div>
+    
+      <div class="questions">
+        <h2>Question 5</h2>
+        <p>From which country did the name 'Pomodoro' originate from?</p>
+        <p>Answer: <input id="qFive" class="questIn" type="text"><span id="outFive"></span></p>
+      </div>
+
+      <!-- This part displays the answer by replacing the innerHTML to the percentage and the mark of the user after they submit their answers -->
+      <div id="result">
+        <p> Result: </p>
+        <p id="numAns"></p>
+      </div>
+
+      <!-- These are buttons that have functions within the JavaScript -->
+      <div class="bottomBtns">
+      <button id="submitBtn">Submit</button>
+      <button id="resetBtn">Reset</button>
+      </div>
+    </div>
+
+
+    <!-- Load JavaScript -->
+    <script src="quiz.js"></script>
+  </body>
+</html>

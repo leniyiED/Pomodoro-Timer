@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Home Page</title>
+
+    <!-- Import Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link href="home.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+
+    <!-- NavBar with options that are link references that redirects the user towards another page -->
+    <nav>
+
+      <!-- Unordered list to easier format all the links and references -->
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+      </ul>
+
+      <h1 id="navHeading"> tomatoFocus </h1>
+
+      <img id="logo" src="/img/PomodoroLogo.png">
+    </nav>
+
+    <!-- Assigned the div with the id "center" in order for the elements within the box to be centered -->
+    <div id="center">
+
+      <!-- Assigned the id "box" in order to put all the elements within a box which is styled with the css.  -->
+      <div id="box">
+
+        <!-- Given the id "switchesBtn" to style both butons within CSS -->
+        <div class="switchesBtn">
+
+          <!-- Onlick part of the button element is a way for a user to click the button and get redirected to another page -->
+          <button id="pomodoroBtn"> Pomodoro </button>
+          <button id="shortBreakBtn" onclick="location.href='sb.html'"> Short Break </button>
+        
+        </div> 
+
+        <h1 id="bigHeading">Pomodoro Timer:</h1>
+        <hr>
+  
+        <h1 id="timer"> 25:00 </h1>
+        
+        <div id="optionsBtn">
+        <button id="stopBtn1">Stop</button>
+        <button id="startBtn1">Start</button> 
+        <button id= "resetBtn1">Reset</button>
+        </div>
+        
+
+      </div>   
+
+    </div>
+
+    <!-- Load JavaScript -->
+    <script src="home.js"></script>
+  </body>
+</html>

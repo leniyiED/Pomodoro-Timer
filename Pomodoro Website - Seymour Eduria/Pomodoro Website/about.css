@@ -1,0 +1,120 @@
+body {
+    background-color: #ee6a6a;
+    margin: 0;
+}
+
+/* No list style and displays the list inline */
+li {
+    list-style-type: none;
+    display: block;
+    font-size: 20px;
+}
+
+/* Float left make sures that the links in the navbar go beside each other */
+a {
+    text-decoration: none;
+    font-family: 'Varela Round', sans-serif;
+    padding: 15px;
+    margin: 0px;
+    float: left;
+    color:  #2e4053;
+}
+
+/* vw states how much width space would the navbar take */
+nav {
+    width: 99.1vw;
+    background-color: #f4d03f;
+}
+
+/* flex command shrinks the ul to prevent overflow */
+ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+/* When the mouse pointer hovers over the link references within the list, the background color changes to a darker yellow to add effect on user experience */
+li a:hover {
+    background-color: #f1c40f;
+}
+
+#logo {
+    max-width: 50px;
+    height: auto;
+    position: absolute; 
+    top: 0px;
+    right: 10px;
+}
+
+#navHeading {
+    font-family: 'Fredoka One', cursive;
+    color:  #34495e;
+    display: inline;
+    position: absolute;
+    top: 0%;
+    left: 44vw;
+    font-size: 25px;
+    letter-spacing: 5px;
+}
+
+h2 {
+    text-decoration: underline;
+}
+
+h1, h2 {
+    color:#34495e  ;
+    font-family: 'Fredoka One', cursive;
+    text-align: center;
+}
+
+#box {
+    margin-top: 40px;
+    background-color: rgba(255, 255, 255, 0.26);
+    border-radius: 15px;
+    border-style: groove;
+    width: 50%;
+    height: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* Traditional Way of centering a div element by using the position as absoloute making sure that the element stay there permanently without it shrinking when the display becomes smaller */
+.center {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+p {
+    font-family: 'Varela Round', sans-serif;
+    text-align: center;
+    font-size: 25px;
+    color:  #566575;
+}
+
+#fcImg {
+    width: 200px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+}
+
+#tmrImg {
+    width: 200px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+}
+
+#pomoCycle {
+    width: 350px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+}

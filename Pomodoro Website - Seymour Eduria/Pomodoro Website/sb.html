@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Shortbreak Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link href="sb.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <nav>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="quiz.html">Quiz</a></li>
+        </ul>
+  
+        <h1 id="navHeading"> tomatoFocus </h1>
+      </nav>
+  
+      <img id="logo" src="/img/PomodoroLogo.png">
+  
+      <div id="center">
+  
+        <div id="box">
+  
+          <div class="switchesBtn">
+  
+            <button id="pomodoroBtn" onclick="location.href='home.html'"> Pomodoro </button>
+            <button id="shortBreakBtn" onclick="location.href='sb.html'"> Short Break </button>
+          
+          </div> 
+  
+          <h1 id="bigHeading">Pomodoro Timer:</h1>
+          <hr>
+    
+          <h1 id="timer"> 5:00 </h1>
+          
+          <div id="optionsBtn">
+          <button id="stopBtn1">Stop</button>
+          <button id="startBtn1">Start</button> 
+          <button id= "resetBtn1">Reset</button>
+          </div>
+          
+  
+        </div>   
+  
+      </div>
+    <!-- Load JavaScript -->
+    <script src="sb.js"></script>
+  </body>
+</html>

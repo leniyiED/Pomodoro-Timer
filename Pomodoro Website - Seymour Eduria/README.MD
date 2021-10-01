@@ -1,0 +1,3 @@
+All of the documents that allow this project to run is in the "Pomodoro Website" Folder. There you will see all the files that I (Seymour Eduria) has compiled and coded. 
+
+Regarding the "sb.hmtl" file, and "sb.css file", I did not put comments in them because it will be too repetitive and both of these files are basically copies of the home.html and home.css files. Thank you for reading this and I hope you find my website fun to use! 
